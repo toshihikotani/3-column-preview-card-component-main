@@ -4,7 +4,104 @@
     --bright-orange: hsl(31, 77%, 52%);
     --dark-cyan: hsl(184, 100%, 22%);
     --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: var(--very-light-gray);
+    font-size: 15px;
+}
+
+/*  WRAPPER */
+#wrapper {
+    width: 330px;
+    height: 1330px;
+    margin: 0 auto;
+    padding: 90px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CARD-BOX */
+.card-box {
+    width: 230px;
+    height: 350px;
+    padding: 40px;
+}
+
+#sedans-card {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#suvs-card {
+    background-color: var(--dark-cyan);
+}
+
+#luxury-card {
+    background-color: var(--very-dark-cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* HEADINGS */
+.card-box > h1 {
+    font-family: 'BigShouldersDisplay-Bold';
+    font-size: 2.5em;
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+}
+
+/* PARAGRAPHS */
+.card-box > p {
+    font-family: 'LexendDeca-Regular';
+    color: var(--transparent-white);
+    line-height: 1.75em;
+}
+
+/* CLICK-BUTTON */
+.click-button {
+    font-family: 'LexendDeca-Regular';
+    background-color: var(--very-light-gray);
+    border: 2px solid;
+    border-color: var(--very-light-gray);
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+}
+
+#sedans-button {
+    color: var(--bright-orange);
+}
+
+#sedans-button:hover {
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+}
+
+#suvs-button {
+    color: var(--dark-cyan);
+}
+
+#suvs-button:hover {
+    background-color: var(--dark-cyan);
+    color: var(--very-light-gray);
+}
+
+#luxury-button {
+    color: var(--very-dark-cyan);
+}
+
+#luxury-button:hover {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray);
+}
+
 
 /* ATTRIBUTION */
 .attribution { 
