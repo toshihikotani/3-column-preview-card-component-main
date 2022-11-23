@@ -102,13 +102,65 @@ body {
     color: var(--very-light-gray);
 }
 
-
 /* ATTRIBUTION */
 .attribution { 
-    font-size: 11px; 
+    font-family: 'LexendDeca-Regular';
     text-align: center; 
+    margin: 5px auto;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+/* PORTRAIT TABLET */
+/* @media only screen and (min-width: 600px) {
+    
+} */
+
+/* LANDSCAPE TABLET */
+@media only screen and (min-width: 768px) {
+        /*  WRAPPER */
+        #wrapper {
+            padding: 170px 0px;
+        }
+    
+        #sedans-card {
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 0px;
+        }
+    
+        #luxury-card {
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0px;       
+        }
+}
+
+/* LAPTOPS / DESKTOPS */
+@media only screen and (min-width: 992px) {
+    /*  WRAPPER */
+    #wrapper {
+        width: 920px;
+        height: 500px;
+        flex-direction: row;
+    }
+
+    /* CARD-BOX */
+    .card-box {
+        width: 210px;
+        height: 410px;
+        padding: 45px;
+        position: relative;
+    }
+    
+    /* CLICK-BUTTON */
+    .click-button {
+        position: absolute;
+        bottom: 10%;
+    }
+}
+
+/* LARGE LAPTOPS / DESKTOPS */
+/* @media only screen and (min-width: 1200px) {
+    
+} */
