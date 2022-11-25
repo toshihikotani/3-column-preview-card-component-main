@@ -10,7 +10,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 25px 0px;
     box-sizing: content-box;
     background-color: var(--very-light-gray);
     font-size: 15px;
@@ -20,8 +20,7 @@ body {
 #wrapper {
     width: 330px;
     height: 1330px;
-    margin: 0 auto;
-    padding: 90px 25px;
+    margin: auto;
     display: flex;
     flex-direction: column;
 }
@@ -106,7 +105,7 @@ body {
 .attribution { 
     font-family: 'LexendDeca-Regular';
     text-align: center; 
-    margin: 5px auto;
+    margin: 10px auto;
 }
 
 .attribution a { 
@@ -120,9 +119,9 @@ body {
 
 /* LANDSCAPE TABLET */
 @media only screen and (min-width: 768px) {
-        /*  WRAPPER */
-        #wrapper {
-            padding: 170px 0px;
+
+        body {
+            padding: 100px 0px;
         }
     
         #sedans-card {
