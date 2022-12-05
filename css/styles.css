@@ -8,12 +8,19 @@
     --very-light-gray: hsl(0, 0%, 95%);
 }
 
+html, body {
+    width: 100vw;
+}
+
 body {
     margin: 0;
-    padding: 25px 0px;
     box-sizing: content-box;
     background-color: var(--very-light-gray);
     font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /*  WRAPPER */
@@ -101,17 +108,6 @@ body {
     color: var(--very-light-gray);
 }
 
-/* ATTRIBUTION */
-.attribution { 
-    font-family: 'LexendDeca-Regular';
-    text-align: center; 
-    margin: 10px auto;
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
-
 /* PORTRAIT TABLET */
 /* @media only screen and (min-width: 600px) {
     
@@ -119,20 +115,6 @@ body {
 
 /* LANDSCAPE TABLET */
 @media only screen and (min-width: 768px) {
-
-        body {
-            padding: 100px 0px;
-        }
-    
-        #sedans-card {
-            border-bottom-left-radius: 10px;
-            border-top-right-radius: 0px;
-        }
-    
-        #luxury-card {
-            border-top-right-radius: 10px;
-            border-bottom-left-radius: 0px;       
-        }
 }
 
 /* LAPTOPS / DESKTOPS */
@@ -142,6 +124,16 @@ body {
         width: 920px;
         height: 500px;
         flex-direction: row;
+    }
+
+    #sedans-card {
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+    #luxury-card {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;       
     }
 
     /* CARD-BOX */
